@@ -1,0 +1,2 @@
+class BusinessGoalsController < ApplicationController
+end
