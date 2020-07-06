@@ -1,0 +1,2 @@
+class BusinessQuestionsController < ApplicationController
+end

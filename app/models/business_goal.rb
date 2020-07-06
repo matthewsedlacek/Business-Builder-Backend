@@ -1,0 +1,2 @@
+class BusinessGoal < ApplicationRecord
+end
