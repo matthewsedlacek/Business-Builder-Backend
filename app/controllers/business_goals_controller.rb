@@ -27,5 +27,5 @@ class BusinessGoalsController < ApplicationController
 
     private
     def business_goal_params
-        params.require(:business_goal).permit(:business_goal_id)
+        params.require(:business_goal).permit(:business_question_answer_id, :title, :description, :status, :steps)
 end
