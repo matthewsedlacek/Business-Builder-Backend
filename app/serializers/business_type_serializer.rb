@@ -1,4 +1,4 @@
 class BusinessTypeSerializer
   include FastJsonapi::ObjectSerializer
-  attributes 
+  attributes :type
 end

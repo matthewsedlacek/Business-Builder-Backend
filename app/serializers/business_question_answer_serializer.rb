@@ -1,4 +1,4 @@
 class BusinessQuestionAnswerSerializer
   include FastJsonapi::ObjectSerializer
-  attributes 
+  attributes :answer, :business, :business_question, :business_goals
 end

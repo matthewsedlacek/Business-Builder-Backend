@@ -27,6 +27,6 @@ class BusinessesController < ApplicationController
 
     private
     def business_params
-        params.require(:business).permit(:business_id, :user_id, :business_type_id)
+        params.require(:business).permit(:user_id, :business_type_id, :name)
     end
 end

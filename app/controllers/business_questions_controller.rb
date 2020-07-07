@@ -27,6 +27,6 @@ class BusinessQuestionsController < ApplicationController
 
     private
     def business_question_params
-        params.require(:business_question).permit(:business_question_id)
+        params.require(:business_question).permit(:question)
     end
 end
