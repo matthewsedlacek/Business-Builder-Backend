@@ -10,6 +10,7 @@ class BusinessesController < ApplicationController
     end
 
     def create
+        binding.pry
         business = Business.create(business_params)
         business = business.addDefaultGoals
         render json: BusinessSerializer.new(business)
@@ -28,6 +29,6 @@ class BusinessesController < ApplicationController
 
     private
     def business_params
-        params.require(:business).permit(:user_id, :business_type_id, :name)
+        params.require(:business).permit(:user_id, :business_type_id, :name, business_question_answers_attributes: [:answer, :business_question_id])
     end
 end

@@ -5,6 +5,8 @@ class Business < ApplicationRecord
   has_many :business_questions, through: :business_question_answers
   has_many :business_goals, through: :business_question_answers
 
+  accepts_nested_attributes_for :business_question_answers
+
   def addDefaultGoals
     default = [[0, "Company business", "Write a brief description of your business that fits on a business card."],
     [0, "Mission statement", "What is your company mission statement?"],
