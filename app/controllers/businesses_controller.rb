@@ -11,6 +11,7 @@ class BusinessesController < ApplicationController
 
     def create
         business = Business.create(business_params)
+        business = business.addDefaultGoals
         render json: BusinessSerializer.new(business)
     end
 
