@@ -2,7 +2,7 @@ class Business < ApplicationRecord
   belongs_to :user
   belongs_to :business_type
   has_many :business_question_answers
-  has_many :business__questions, through: :business_question_answers
+  has_many :business_questions, through: :business_question_answers
   has_many :business_goals, through: :business_question_answers
 
   def addDefaultGoals
