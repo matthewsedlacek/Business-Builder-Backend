@@ -10,7 +10,6 @@ class BusinessesController < ApplicationController
     end
 
     def create
-        binding.pry
         business = Business.create(business_params)
         business = business.addDefaultGoals
         render json: BusinessSerializer.new(business)
