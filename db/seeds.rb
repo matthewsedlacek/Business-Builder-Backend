@@ -5,12 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-require 'database_cleaner/active_record'
 
-DatabaseCleaner.strategy = :truncation
-
-# then, whenever you need to clean the DB
-DatabaseCleaner.clean
+User.destroy_all
+Business.destroy_all
+BusinessQuestion.destroy_all
+BusinessQuestionAnswer.destroy_all
+BusinessGoals.destroy_all
+BusinessType.destroy_all
 
 business_question = BusinessQuestion.create(title:"Business", question:"Write a description of your company.")
 products_question = BusinessQuestion.create(title:"Products", question:"What product will you be providing your customers?")
