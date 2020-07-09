@@ -10,7 +10,7 @@ User.destroy_all
 Business.destroy_all
 BusinessQuestion.destroy_all
 BusinessQuestionAnswer.destroy_all
-BusinessGoals.destroy_all
+BusinessGoal.destroy_all
 BusinessType.destroy_all
 
 business_question = BusinessQuestion.create(title:"Business", question:"Write a description of your company.")
