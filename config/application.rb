@@ -23,7 +23,7 @@ module BusinessBuilderBackend
   class Application < Rails::Application
     config.middleware.insert_before 0, Rack::Cors do
       allow do
-        origins 'http://localhost:3000'
+        origins '*'
         resource '*',
           :headers => :any,
           :methods => [:get, :post, :delete, :put, :patch, :options, :head],
