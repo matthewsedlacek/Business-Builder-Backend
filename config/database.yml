@@ -19,8 +19,8 @@ development:
   encoding: unicode
   database: business_builder_development
   pool: 5
-  username: aidanmuller-cohn
-  password:
+  # username: aidanmuller-cohn
+  # password:
   timeout: 5000
  
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -49,8 +49,8 @@ test:
   encoding: unicode
   database: business_builder_test
   pool: 5
-  username: aidanmuller-cohn
-  password:
+  # username: aidanmuller-cohn
+  # password:
   timeout: 5000
 
 production:
@@ -58,6 +58,6 @@ production:
   encoding: unicode
   database: business_builder_production
   pool: 5
-  username: aidanmuller-cohn
-  password:
+  # username: aidanmuller-cohn
+  # password:
   timeout: 5000
